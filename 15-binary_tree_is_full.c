@@ -18,12 +18,10 @@ size_t binary_tree_is_full(const binary_tree_t *tree)
 		return (0);
 	else if (tree->left == NULL && tree->right == NULL)
 		return (1);
-	else
-	{
-		left = binary_tree_is_full(tree->left);
-		right = binary_tree_is_full(tree->right);
-		if (left && right)
-			return 1;
-		return 0;
-	}
+
+	left = binary_tree_is_full(tree->left);
+	right = binary_tree_is_full(tree->right);
+	if (left && right)
+		return (1);
+	return (0);
 }
