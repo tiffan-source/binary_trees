@@ -22,6 +22,7 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
+typedef const binary_tree_t c_binary;
 
 void binary_tree_print(const binary_tree_t *tree);
 
